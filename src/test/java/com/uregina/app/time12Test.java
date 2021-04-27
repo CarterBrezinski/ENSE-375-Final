@@ -11,12 +11,6 @@ import com.uregina.exceptions.*;
 public class Time12Test 
 {
     @Test
-    public void time12isTestRunning()
-    {
-        assertTrue( true );
-    }
-
-    @Test
     public void time12validBuild()throws InvalidTimeException
     {
         Time12 time12test = new Time12(5, 37, AmPm.pm);
