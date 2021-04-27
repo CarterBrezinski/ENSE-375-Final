@@ -11,6 +11,11 @@ import com.uregina.exceptions.*;
 public class Time12Test 
 {
     @Test
+    public void shouldAnswerWithTrue()
+    {
+        assertTrue( true );
+    }
+    @Test
     public void validBuild()
     {
         AmPm pmInitiation = AmPm.pm;
