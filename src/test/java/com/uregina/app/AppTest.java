@@ -18,7 +18,7 @@ public class AppTest
         assertTrue( true );
     }
     @Test
-    public void shouldAlsoAnswerWithTrue()
+    public void isTestRunning()
     {
         assertTrue( true );
     }
