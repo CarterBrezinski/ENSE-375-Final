@@ -8,7 +8,7 @@ import com.uregina.exceptions.*;
 /**
  * Unit test for simple App.
  */
-public class Time12Test 
+class Time12Test 
 {
     @Test
     public void validBuild() throws InvalidTimeException
