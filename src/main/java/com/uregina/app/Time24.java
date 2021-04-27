@@ -67,11 +67,23 @@ public class Time24
 	*/  
 	public static Time24 toTime24(int hours, int minutes, AmPm am_pm)
 	{
+	int maxHrs = 12;
+	int minHrs = 0;
 		Time24 time=null;
 		//Todo : add your code here
-		
-		
-
+		if(am_pm == AmPm.pm){
+			if(hours != maxHrs){
+				hours += maxHrs;
+			}
+		}
+		else{
+			if (hours == maxHrs){
+				hours = minHrs;
+			}
+		}
+		try{
+			time = new Time24(hours, minutes);
+		}catch(InvalidTimeException exception){}
 		// End of your code
 		return time;
 	}

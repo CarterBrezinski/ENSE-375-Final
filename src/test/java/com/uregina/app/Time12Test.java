@@ -77,9 +77,6 @@ public class Time12Test
         if(stringVal.equalsIgnoreCase(example.toString())){
             validCase = true;
         }
-
-        System.out.println(example.toString());
-
         assertTrue(validCase);
     }
 

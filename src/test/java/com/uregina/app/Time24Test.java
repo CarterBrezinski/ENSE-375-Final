@@ -30,6 +30,21 @@ public class Time24Test
         assertTrue( true );
     }
 
+    // This also shows off a successful build case 
+    @Test
+    public void time24validToString() throws InvalidTimeException
+    {
+        Time24 example = null;
+        example = example.toTime24(5, 37, AmPm.pm);
+
+        String stringVal = "17:37";
+
+        if(stringVal.equalsIgnoreCase(example.toString())){
+            validCase = true;
+        }
+
+        assertTrue(validCase);
+    }
     // This test in theory should be broken up into successful 
     // builds for getting hours, and getting minutes
     // I am combining this build for time, and ensuring it assertsTrue means that 
