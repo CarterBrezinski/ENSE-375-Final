@@ -11,13 +11,14 @@ import com.uregina.exceptions.*;
 public class Time12Test 
 {
     @Test
-    public void time12validBuild()throws InvalidTimeException
+    public void time12validBuild() throws InvalidTimeException
     {
         Time12 time12test = new Time12(5, 37, AmPm.pm);
-        boolean validCase = ((time12test.getAm_or_PM()) == AmPm.pm);
+        boolean validCase = ((time12test.getAm_or_PM) == AmPm.pm);
 
         assertTrue(validCase);
     }
+
     	/*	QQQ
 		Carter Comments: 
 		
