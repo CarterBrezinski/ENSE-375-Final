@@ -72,7 +72,7 @@ public class Time12Test
         AmPm pmInitiation = AmPm.pm;
         Time12 example = new Time12(5, 37, pmInitiation);
 
-        String stringVal = "5:37am"
+        String stringVal = "5:37am";
 
         if(stringVal == example.toString()){
             validCase = true;
