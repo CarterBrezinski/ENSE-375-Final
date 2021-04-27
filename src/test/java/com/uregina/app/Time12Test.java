@@ -66,7 +66,7 @@ public class Time12Test
     }
 
     @Test
-    public void validToString(){
+    public void validToString() throws InvalidTimeException{
         boolean validCase = false;
 
         AmPm pmInitiation = AmPm.pm;
