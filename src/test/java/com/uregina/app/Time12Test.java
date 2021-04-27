@@ -30,7 +30,8 @@ public class Time12Test
         assertTrue( true );
     }
 
-    @Test void validGetters() throws InvalidTimeException{
+    @Test
+    public void validGetters() throws InvalidTimeException{
         boolean validCase = false;
 
         AmPm pmInitiation = AmPm.pm;
