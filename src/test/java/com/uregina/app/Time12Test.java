@@ -78,6 +78,8 @@ public class Time12Test
             validCase = true;
         }
 
+        System.out.println(example.toString());
+
         assertTrue(validCase);
     }
 
