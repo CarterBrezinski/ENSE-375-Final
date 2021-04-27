@@ -74,7 +74,7 @@ public class Time12Test
 
         String stringVal = " 5:37 pm";
 
-        if(stringVal == example.toString()){
+        if(stringVal.equalsIgnoreCase(example.toString())){
             validCase = true;
         }
 
