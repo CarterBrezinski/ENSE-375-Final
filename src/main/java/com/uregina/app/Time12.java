@@ -78,13 +78,29 @@ public class Time12
 		based on what we can see from the 'lessThan' method, it will require a basic integer.
 		it will check if flight1's time is less than flight2's time. and it will return a positive, negative, or zero integer.
 
+		It wont be a subtraction function as much as it will be a difference function, either positive, negative, or zero.
 		Therefore the goal of this function is the following: 
+		
+		t1.hours will subtract t2.hours and store the difference with respect to 12 hour time
+
+		t1.minutes will subtract t2.minutes and store the difference with respect to 12 hour time
+
+		the minute equivalent will be generated
+		aka ( hours * 60 ) + minutes
 	*/  
 	public static int subtract(Time12 t1, Time12 t2)
 	{
 		int difference=0;
 		//Todo: add your code here
-		// QQQ
+		int t1hour = t1.getHours();
+		int t1min = t1.getMinutes();
+		int t2hour = t2.getHours();
+		int t2min = t2.getMinutes();
+
+		int hourDif = t1hour - t2hour;
+		int minuteDif = t1min - t2min;
+
+		difference  = (hourDif * 60) + minuteDif;
 		// end of your code
 		return difference;
 	}
@@ -96,6 +112,7 @@ public class Time12
 	*/
 	public static boolean lessThan(Time12 t1,Time12 t2)
 	{
+		// will return a difference of integer (minutes) either +,-,0.
 		return Time12.subtract(t1,t2)<0;
 	}
 }

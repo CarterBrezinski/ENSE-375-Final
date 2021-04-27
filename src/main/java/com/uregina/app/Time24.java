@@ -69,7 +69,7 @@ public class Time24
 	{
 		Time24 time=null;
 		//Todo : add your code here
-
+		
 
 		// End of your code
 		return time;

@@ -4,6 +4,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+import com.uregina.exceptions.*;
 /**
  * Unit test for simple App.
  */
@@ -13,6 +14,21 @@ public class Time12Test
     public void time12isTestRunning()
     {
         assertTrue( true );
+    }
+
+    @Test
+    public void time12validBuild()throws InvalidTimeException
+    {
+        boolean validCase = false;
+        time12 time12test = new Time12(5, 37, AmPm.pm);
+
+        AmPm isAMOrPM = time12test.getAm_or_PM();
+
+        if (isAMOrPM == AmPm.pm){
+            validCase = true;
+        }
+
+        assertTrue(validCase);
     }
     	/*	QQQ
 		Carter Comments: 

@@ -23,23 +23,23 @@ public class Time24Test
     // builds for getting hours, and getting minutes
     // I am combining this build for time, and ensuring it assertsTrue means that 
     // the setting of the time24 was successful. 
-    @Test
-    public void time24validBuild()throws InvalidTimeException{
-        // Test instance is 5:24pm
-        Time24 time24 = new Time24(17, 24);
+    // @Test
+    // public void time24validBuild()throws InvalidTimeException{
+    //     // Test instance is 5:24pm
+    //     Time24 testTime24 = new Time24(17, 24);
 
-        int hours = time24.getHours();
-        int minutes = time24.getMinutes();
-        boolean validCase = true;
+    //     int hours = testTime24.getHours();
+    //     int minutes = testTime24.getMinutes();
+    //     boolean validCase = true;
 
-        // If this if block goes through on either case, then
-        // it will set validCase to false and this test will fail.
-        if(hours != 17 || minutes != 24){
-            validCase = false;
-        }
+    //     // If this if block goes through on either case, then
+    //     // it will set validCase to false and this test will fail.
+    //     if(hours != 17 || minutes != 24){
+    //         validCase = false;
+    //     }
 
-        assertEquals(true, validCase);
-    }
+    //     assertEquals(true, validCase);
+    // }
 
 
 
