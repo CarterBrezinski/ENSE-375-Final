@@ -35,6 +35,10 @@ public class Ticket
 	 * 		(class: Flight , method: calculateLayoverTime)
 	 * 		(class: ticket , method: hasCyclicTrip)
 	*/
+	/*
+	QQQ
+	Carter's Comments here:
+	*/
 	public static boolean checkTicket( ArrayList<Flight> ticket, int maxFlightsCount, int maxFlightTime, int maxLayoverTime, boolean hasSchengenVisa)
 	{
 		//Todo: add your code here

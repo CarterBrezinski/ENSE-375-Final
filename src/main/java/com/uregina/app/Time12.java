@@ -72,6 +72,14 @@ public class Time12
 	 * 		(class: Time24 , method: getHours)
 	 * 		(class: Time24 , method: getMinutes)
 	*/
+	/*	QQQ
+		Carter Comments: 
+		The first step in this subtracting is finding which time is greater.
+		based on what we can see from the 'lessThan' method, it will require a basic integer.
+		it will check if flight1's time is less than flight2's time. and it will return a positive, negative, or zero integer.
+
+		Therefore the goal of this function is the following: 
+	*/  
 	public static int subtract(Time12 t1, Time12 t2)
 	{
 		int difference=0;
