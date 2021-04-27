@@ -20,7 +20,7 @@ public class Time12Test
     public void time12validBuild()throws InvalidTimeException
     {
         boolean validCase = false;
-        time12 time12test = new Time12(5, 37, AmPm.pm);
+        Time12 time12test = new Time12(5, 37, AmPm.pm);
 
         AmPm isAMOrPM = time12test.getAm_or_PM();
 
