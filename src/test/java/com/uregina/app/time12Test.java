@@ -11,16 +11,19 @@ import com.uregina.exceptions.*;
 class Time12Test 
 {
     @Test
-    public void shouldAnswerWithTrue()
+    public void shouldAnswerWithTrue() 
     {
         assertTrue( true );
     }
     @Test
-    public void validBuild()
+    public void validBuild() throws InvalidTimeException
     {
+        boolean validCase = false;
         AmPm pmInitiation = AmPm.pm;
         Time12 time12test = new Time12(5, 37, pmInitiation);
-        boolean validCase = ((time12test.getAM_or_PM()) == pmInitiation);
+        if((time12test.getAM_or_PM()) == pmInitiation){
+            validCase = true;
+        }
         assertTrue(validCase);
     }
 
