@@ -30,6 +30,7 @@ public class Time12Test
         assertTrue( true );
     }
 
+    // Also proves that a valid build has taken place and can be accessed.
     @Test
     public void validGetters() throws InvalidTimeException{
         boolean validCase = false;
@@ -47,25 +48,27 @@ public class Time12Test
         assertTrue(validCase);
     }
 
-    /*
     @Test
-    public void validBuild() throws InvalidTimeException
-    {
+    public void validSubtract() throws InvalidTimeException{
         boolean validCase = false;
+
         AmPm pmInitiation = AmPm.pm;
+        Time12 example = new Time12(5, 37, pmInitiation);
+        Time12 example2 = new Time12(4, 26, pmInitiation);
 
-        Time12 time12test = new Time12(5, 37, pmInitiation);
+        int difference = Time12.subtract(example, example2);
 
-        if((time12test.getAM_or_PM()) == pmInitiation){
+        if(difference = 71){
             validCase = true;
         }
+
         assertTrue(validCase);
     }
 
-    @Test
-    public void validToString(){
+    //@Test
+    //public void validToString(){
+//
+    //}
 
-    }
-
-    */ 
+    //*/ 
 }
