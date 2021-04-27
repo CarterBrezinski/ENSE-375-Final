@@ -8,7 +8,7 @@ import com.uregina.exceptions.*;
 /**
  * Unit test for simple App.
  */
-class Time12Test 
+public class Time12Test 
 {
     @Test
     public void shouldAnswerWithTrue() 
