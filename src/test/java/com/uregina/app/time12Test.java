@@ -19,14 +19,8 @@ public class Time12Test
     @Test
     public void time12validBuild()throws InvalidTimeException
     {
-        boolean validCase = false;
         Time12 time12test = new Time12(5, 37, AmPm.pm);
-
-        AmPm isAMOrPM = time12test.getAm_or_PM();
-
-        if (isAMOrPM == AmPm.pm){
-            validCase = true;
-        }
+        boolean validCase = ((time12test.getAm_or_PM()) == AmPm.pm);
 
         assertTrue(validCase);
     }
