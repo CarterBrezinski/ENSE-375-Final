@@ -8,15 +8,15 @@ import com.uregina.exceptions.*;
 /**
  * Unit test for simple App.
  */
-class Time12Test 
+public class Time12Test 
 {
     @Test
-    public void validBuild() throws InvalidTimeException
+    public void validBuild()
     {
         AmPm pmInitiation = AmPm.pm;
         Time12 time12test = new Time12(5, 37, pmInitiation);
-        //boolean validCase = ((time12test.getAm_or_PM()) == pmInitiation);
-        assertTrue(true);
+        boolean validCase = ((time12test.getAm_or_PM()) == pmInitiation);
+        assertTrue(validCase);
     }
 
     	/*	QQQ
