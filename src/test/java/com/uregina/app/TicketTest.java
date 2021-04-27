@@ -5,7 +5,7 @@
         - valid build for a Flight
         - branching off of the above ,having valid returns for getDepartureTime, getArrivalTime, getDepartureAirport, getArrivalAirport
         - invalid and valid flight time
-        
+
     */
 
 package com.uregina.app;
@@ -13,6 +13,8 @@ package com.uregina.app;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+
+import com.uregina.exceptions.*;
 
 public class TicketTest 
 {
