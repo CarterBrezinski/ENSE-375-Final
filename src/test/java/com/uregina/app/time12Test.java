@@ -20,7 +20,7 @@ class Time12Test
     {
         AmPm pmInitiation = AmPm.pm;
         Time12 time12test = new Time12(5, 37, pmInitiation);
-        boolean validCase = ((time12test.getAm_or_PM()) == pmInitiation);
+        boolean validCase = ((time12test.getAM_or_PM()) == pmInitiation);
         assertTrue(validCase);
     }
 
