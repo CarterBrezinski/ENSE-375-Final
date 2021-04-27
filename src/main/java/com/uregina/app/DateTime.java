@@ -51,11 +51,20 @@ public class DateTime
 	/*
 	QQQ
 	Carter's Comments here:
+	Use equals on both d1 & d2.
+	Use nextdate on both d1 -> d2 and d2->d1, 
+	if they're more than one day, then throw the exception. 
+	----
+	Otherwise perform the following:
+	
 	*/
 	public static int subtract(DateTime d1,DateTime d2) throws MoreThanOneDayException
 	{
 		int diff=0;
 		//Todo: add your code here
+		//check and see if either reversal of d1,d2 or d2,d1 is more than 1 day apart, additionally check and see if the days are equal.
+
+		
 
 		//end of your code
 		return diff;

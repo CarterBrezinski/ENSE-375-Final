@@ -1,25 +1,3 @@
-package com.uregina.app;
-
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
-
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
-    @Test
-    public void isTestRunning()
-    {
-        assertTrue( true );
-    }
-    
     /*
 	QQQ
 	Carter's Comments here:
@@ -41,4 +19,26 @@ public class AppTest
     (If the user does not then: )
     - and finally it will print valid or invalid based on checkticket. 
 	*/
+
+package com.uregina.app;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+/**
+ * Unit test for simple App.
+ */
+public class AppTest 
+{
+    @Test
+    public void shouldAnswerWithTrue()
+    {
+        assertTrue( true );
+    }
+    @Test
+    public void isTestRunning()
+    {
+        assertTrue( true );
+    }
 }

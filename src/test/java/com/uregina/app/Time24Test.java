@@ -1,3 +1,14 @@
+    /*	QQQ
+		Carter Comments: 
+		
+        The following tests could be made for the time12.java function:
+        - Making a valid working time 24
+        - Set time24 followed by: getHours, getMinutes
+        - valid toString == 
+        - correct Subtract (positive, negative, zero)
+        - COULD add potentially 'invalid' test cases and the exceptions they throw. 
+	*/  
+
 package com.uregina.app;
 
 import static org.junit.Assert.assertTrue;
@@ -40,17 +51,4 @@ public class Time24Test
 
     //     assertEquals(true, validCase);
     // }
-
-
-
-    /*	QQQ
-		Carter Comments: 
-		
-        The following tests could be made for the time12.java function:
-        - Making a valid working time 24
-        - Set time24 followed by: getHours, getMinutes
-        - valid toString == 
-        - correct Subtract (positive, negative, zero)
-        - COULD add potentially 'invalid' test cases and the exceptions they throw. 
-	*/  
 }
