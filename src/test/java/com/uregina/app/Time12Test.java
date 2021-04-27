@@ -58,17 +58,28 @@ public class Time12Test
 
         int difference = Time12.subtract(example, example2);
 
-        if(difference = 71){
+        if(difference == 71){
             validCase = true;
         }
 
         assertTrue(validCase);
     }
 
-    //@Test
-    //public void validToString(){
-//
-    //}
+    @Test
+    public void validToString(){
+        boolean validCase = false;
+
+        AmPm pmInitiation = AmPm.pm;
+        Time12 example = new Time12(5, 37, pmInitiation);
+
+        String stringVal = "5:37am"
+
+        if(stringVal == example.toString()){
+            validCase = true;
+        }
+
+        assertTrue(validCase);
+    }
 
     //*/ 
 }
