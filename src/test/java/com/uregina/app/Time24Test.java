@@ -28,8 +28,8 @@ public class Time24Test
         // Test instance is 5:24pm
         Time24 time24 = new Time24(17, 24);
 
-        int hours = time24.getHours;
-        int minutes = time24.getMinutes;
+        int hours = time24.getHours();
+        int minutes = time24.getMinutes();
         boolean validCase = true;
 
         // If this if block goes through on either case, then
