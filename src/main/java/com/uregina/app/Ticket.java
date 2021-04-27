@@ -15,9 +15,9 @@ public class Ticket
 	 * The function checks the validaity of a ticket
 	 * It checks
 	 *		1. airports code are in IATA format (any three uppercases letters)
-	 *		2. maximum flights Count <= number of flights in the ticket
-	 *		3. maximum flight time <= Total flight times ( sum of flight time of each flight)
-	 *		4. maximum layover time <= Total layover times ( sum of layover time between each consequative flight)
+	 *        2. maximum flights Count <= number of flights in the ticket
+     *        3. maximum flight time <= Total flight times ( sum of flight time of each flight)
+     *        4. maximum layover time <= Total layover times (sum of layover time between each two  consecutive flight)
 	 *		5. no flight between two airports in the Schengen area unless the passenger has a valid SchengenVisa
 	 *		6. no cyclic trip
 	 *		7. The sequence of flights in correct ( the arrival airport of a flight is the departure airport of the next flight)
@@ -38,7 +38,7 @@ public class Ticket
 	public static boolean checkTicket( ArrayList<Flight> ticket, int maxFlightsCount, int maxFlightTime, int maxLayoverTime, boolean hasSchengenVisa)
 	{
 		//Todo: add your code here
-		
+		// QQQ
 
 		//end of your code
 		return true;
@@ -51,6 +51,11 @@ public class Ticket
 	 * usefeul functions that you may use
 	 * 		(class: Flight , method: getArrivalAirport)
 	 * 		(class: Flight , method: getDepatureAirport)
+	*/
+
+	/*
+	QQQ
+	Carter's Comments here:
 	*/
 	public static boolean hasCyclicTrip(ArrayList<Flight> ticket)
 	{

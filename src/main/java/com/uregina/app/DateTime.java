@@ -47,6 +47,11 @@ public class DateTime
 	 * 		(class: Time12 , method: subtract)
 	 * 		(class: Date , method: nextDate)
 	 */
+
+	/*
+	QQQ
+	Carter's Comments here:
+	*/
 	public static int subtract(DateTime d1,DateTime d2) throws MoreThanOneDayException
 	{
 		int diff=0;

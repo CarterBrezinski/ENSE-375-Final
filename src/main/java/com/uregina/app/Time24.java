@@ -45,6 +45,26 @@ public class Time24
 	 * @see 	https://www.freecodecamp.org/news/mathematics-converting-am-pm-to-24-hour-clock/
 	 * @note	(12 am and 12 pm are special cases)
 	 */
+	/*	QQQ
+		Carter Comments: 
+		Since this function is meant for 24 hour time, that means the code can run from 00:00 to 24:00
+		From there the time will 'reset' technically and a new day would be made. 
+
+		The function toTime24 takes the hour of the day, the time of the day, and if it is AM or PM,
+		and it converts the time accordingly based on this. 
+
+
+
+		Based upon the constructor above, Test cases for Time24 should include the following:
+		- A valid case for am
+		- A valid case for pm
+		- An invalid case that is 'less than for hours'
+		- An invalid case that is 'greater than for hours'
+		- An invalid case that is 'less than for minutes'
+		- An invalid case that is 'greater than for minutes'
+		- And potentially empty cases. 
+
+	*/  
 	public static Time24 toTime24(int hours, int minutes, AmPm am_pm)
 	{
 		Time24 time=null;
