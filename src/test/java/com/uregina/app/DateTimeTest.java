@@ -6,8 +6,6 @@
         - given date, correct toString()
         - 2 given dates, correct lessThan conversion
         - correct getDate & getTime
-
-
         - IF YOU HAVE TIME, correct invalid cases for the above
         
     */
@@ -30,5 +28,31 @@ public class DateTimeTest
     {
         assertTrue( true );
     }
+
     
+    // This also accounts for a valid successful build test case.
+    @Test
+    public void validToString() throws InvalidTimeException{
+        boolean validCase = true;
+
+        AmPm pmInitiation = AmPm.pm;
+        Time12 exampleTime1 = new Time12(5, 37, pmInitiation);
+        Date exampleDate1 = new Date(4, 27, 2021);
+        DateTime exampleDateTime = new DateTime(exampleDate1, exampleTime1);
+
+        //Time12 exampleTime2 = newTime12(5, 50, pmInitiation);
+        //Date exampleDate2 = new Date(5, 28, 2021);
+
+
+        String stringVal =  exampleDateTime.toString();
+        System.out.println("QQQQQQQQQQQQQ " + stringVal);
+
+        //if(stringVal.equalsIgnoreCase(example.toString())){
+        //    validCase = true;
+        //}
+        assertTrue(validCase);
+    }
+    
+    
+
 }
