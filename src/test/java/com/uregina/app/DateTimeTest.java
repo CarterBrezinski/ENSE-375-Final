@@ -3,11 +3,9 @@
         Carter Comments: 
         The following make sense for a list of DateTimeTest test cases.
         - correct build for DateTime
-        - given date, correct toString()
-        - 2 given dates, correct lessThan conversion
-        - correct getDate & getTime
+        - given date, correct toString() X
+        - 2 given dates, correct lessThan conversion X
         - IF YOU HAVE TIME, correct invalid cases for the above
-        
     */
 
 package com.uregina.app;
@@ -28,8 +26,7 @@ public class DateTimeTest
     {
         assertTrue( true );
     }
-
-    
+ 
     // This also accounts for a valid successful build test case.
     @Test
     public void validToString() throws InvalidTimeException, InvalidDateException{
