@@ -47,7 +47,7 @@ public class DateTimeTest
 
         System.out.println("QQQQQQQQQQQQQ ");
 
-        if(stringVal.equalsIgnoreCase(example.toString())){
+        if(stringVal.equalsIgnoreCase(exampleDateTime.toString())){
            validCase = true;
         }
         assertTrue(validCase);
