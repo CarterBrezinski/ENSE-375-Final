@@ -33,7 +33,7 @@ public class DateTimeTest
     // This also accounts for a valid successful build test case.
     @Test
     public void validToString() throws InvalidTimeException, InvalidDateException{
-        boolean validCase = true;
+        boolean validCase = false;
 
         AmPm pmInitiation = AmPm.pm;
         Time12 exampleTime1 = new Time12(5, 37, pmInitiation);
@@ -43,13 +43,13 @@ public class DateTimeTest
         //Time12 exampleTime2 = newTime12(5, 50, pmInitiation);
         //Date exampleDate2 = new Date(5, 28, 2021);
 
+        String stringVal = " 4/27/2021  5:37 pm";
 
-        String stringVal =  exampleDateTime.toString();
-        System.out.println("QQQQQQQQQQQQQ " + stringVal);
+        System.out.println("QQQQQQQQQQQQQ ");
 
-        //if(stringVal.equalsIgnoreCase(example.toString())){
-        //    validCase = true;
-        //}
+        if(stringVal.equalsIgnoreCase(example.toString())){
+           validCase = true;
+        }
         assertTrue(validCase);
     }
     
