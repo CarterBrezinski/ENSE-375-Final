@@ -34,6 +34,8 @@ public class Time24Test
     @Test
     public void time24validToString() throws InvalidTimeException
     {
+        boolean validCase = false;
+
         Time24 example = null;
         example = example.toTime24(5, 37, AmPm.pm);
 
@@ -49,6 +51,8 @@ public class Time24Test
     @Test
     public void time24validsubtract() throws InvalidTimeException
     {
+        boolean validCase = false;
+
         Time24 example = null;
         example = example.toTime24(5, 37, AmPm.pm);
 
