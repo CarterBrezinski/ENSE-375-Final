@@ -43,7 +43,7 @@ public class Ticket
 	public static boolean checkTicket( ArrayList<Flight> ticket, int maxFlightsCount, int maxFlightTime, int maxLayoverTime, boolean hasSchengenVisa)
 	{
 		//Todo: add your code here
-		// QQQ
+		// QQQ # 6
 
 		//end of your code
 		return true;
@@ -61,7 +61,7 @@ public class Ticket
 	/*
 	QQQ
 	Carter's Comments here:
-	
+
 	*/
 	public static boolean hasCyclicTrip(ArrayList<Flight> ticket)
 	{

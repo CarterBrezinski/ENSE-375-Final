@@ -45,25 +45,38 @@ public class Time24Test
 
         assertTrue(validCase);
     }
-    // This test in theory should be broken up into successful 
-    // builds for getting hours, and getting minutes
-    // I am combining this build for time, and ensuring it assertsTrue means that 
-    // the setting of the time24 was successful. 
-    // @Test
-    // public void time24validBuild()throws InvalidTimeException{
-    //     // Test instance is 5:24pm
-    //     Time24 testTime24 = new Time24(17, 24);
 
-    //     int hours = testTime24.getHours();
-    //     int minutes = testTime24.getMinutes();
-    //     boolean validCase = true;
+    @Test
+    public void time24validsubtract() throws InvalidTimeException
+    {
+        Time24 example = null;
+        example = example.toTime24(5, 37, AmPm.pm);
 
-    //     // If this if block goes through on either case, then
-    //     // it will set validCase to false and this test will fail.
-    //     if(hours != 17 || minutes != 24){
-    //         validCase = false;
-    //     }
+        Time24 example1 = null;
+        example1 = example1.toTime24(4, 26, AmPm.pm);
 
-    //     assertEquals(true, validCase);
-    // }
+        int difference = Time24.subtract(example, example1);
+
+        if(difference == 71){
+            validCase = true;
+        }
+
+        assertTrue(validCase);
+    }
+
+    @Test
+    public void validGetters() throws InvalidTimeException{
+        boolean validCase = false;
+
+        Time12 example = new Time12(5, 37, pmInitiation);
+
+        AmPm getAMPM = example.getAM_or_PM();
+        int getHours = example.getHours();
+        int getMinutes = example.getMinutes();
+
+        if((getAMPM == pmInitiation)&&(getHours == 5)&&(getMinutes == 37)){
+            validCase = true;
+        }
+        assertTrue(validCase);
+    }
 }

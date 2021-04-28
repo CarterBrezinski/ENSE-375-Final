@@ -56,15 +56,37 @@ public class DateTime
 	if they're more than one day, then throw the exception. 
 	----
 	Otherwise perform the following:
-	
+
 	*/
 	public static int subtract(DateTime d1,DateTime d2) throws MoreThanOneDayException
 	{
 		int diff=0;
 		//Todo: add your code here
-		//check and see if either reversal of d1,d2 or d2,d1 is more than 1 day apart, additionally check and see if the days are equal.
+		// To ensure that they are 1 day within each other, we will perform the following: 		
+		boolean boundsTest1 = Date.equal(d1.nextDate(),d2);
+		boolean boundsTest2 = Date.equal(d2.nextDate(),d1);
 
+		// These bounds tests check and see if d2 lies on either side of d1. 
+		// and if they dont, then it throws the exception. 
+		// If you have time, this will be a good test case.
+		if((boundsTest1 != true)&&(boundsTest2 != true)) throw new MoreThanOneDayException();
 		
+		// If they're within 1 day of one another, then the following caluclation is performed: 
+		int date1day = d1.getDate().getDay();
+		int date2day = d2.getDate().getDay();
+
+		int date1time = d1.getTime();
+		int date2time = d2.getTime();
+
+		// There is the potential for the calculation to be thrown off due to say a previous or next day
+		// occuring on a previous day/month and having a larger/smaller value associated.
+
+		// Currently this cant cover bridging across months. 
+		// This can be solved later during refactoring/2nd iteration development.
+		int dayDiff = date1day - date2day;
+		int timeDiff = date1time - date2time;
+
+		diff = timeDiff + (dayDiff * 24 * 60);
 
 		//end of your code
 		return diff;

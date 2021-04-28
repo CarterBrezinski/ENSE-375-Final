@@ -120,10 +120,38 @@ public class Date
 	 * @param 	d2 a Date object
 	 * @return	true if d1<d2, false otherwise
 	*/
+
+	//return Date.lessThan(d1.date,d2.date) || ( Date.equal(d1.date,d2.date) && Time12.lessThan(d1.time,d2.time)) ;
+	/*
+	Potential Cases: 
+	If day 1 is greater than day 2, return false
+	If day 1 is less than day 2, return true
+	It can be the same year, same month, but NOT the same day. 
+	All of the above will yield true, otherwise it would yield false.
+	*/
 	public static boolean lessThan(Date d1,Date d2)
 	{
 		//Todo: Add your code here
-		// QQQ
-		return false;
+		boolean isLess = false;
+
+		// If the year of date 1 is less than date 2,  it's instantly 'less than'. 
+		if(d1.getYear() < d2.getYear()){
+			isLess = true;
+		} 
+		// If years are equal, but months are less than one another, it's 'less than'
+		else if(d1.getYear() == d2.getYear()){
+			if(d1.getMonth() < d2.getMonth()){
+			isLess = true;
+		// If years are equal, and months are equal, then the days must be less than for it to be 'less than'
+		}
+		if((d1.getMonth() == d2.getMonth()) && (d1.getDay() < d2.getDay())){
+			isLess = true;
+		// The days must be less than for it to be 'less than', otherwise it is false.
+		}
+		}
+		else{
+			isLess = false;
+		}
+		return isLess;
 	}
 }
