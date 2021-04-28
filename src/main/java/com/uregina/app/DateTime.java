@@ -72,6 +72,8 @@ public class DateTime
 		if((boundsTest1 != true)&&(boundsTest2 != true)) throw new MoreThanOneDayException();
 		
 		// If they're within 1 day of one another, then the following caluclation is performed: 
+		// This could be accomplished through the use of the date and time subtraction functions
+		// for myself it made more sense to 
 		int date1day = d1.getDate().getDay();
 		int date2day = d2.getDate().getDay();
 

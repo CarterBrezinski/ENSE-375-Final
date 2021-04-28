@@ -45,14 +45,28 @@ public class DateTimeTest
 
         String stringVal = " 4/27/2021  5:37 pm";
 
-        System.out.println("QQQQQQQQQQQQQ ");
-
         if(stringVal.equalsIgnoreCase(exampleDateTime.toString())){
            validCase = true;
         }
         assertTrue(validCase);
     }
     
-    
+    @Test
+    public void validLessThan() throws InvalidTimeException, InvalidDateException{
+        boolean validCase = false;
+
+        AmPm pmInitiation = AmPm.pm;
+        Time12 exampleTime1 = new Time12(5, 37, pmInitiation);
+        Date exampleDate1 = new Date(4, 27, 2021);
+        DateTime exampleDateTime1 = new DateTime(exampleDate1, exampleTime1);
+
+        Time12 exampleTime2 = newTime12(5, 50, pmInitiation);
+        Date exampleDate2 = new Date(5, 28, 2021);
+        DateTime exampleDateTime2 = new DateTime(exampleDate2, exampleTime2);
+
+        validCase = DateTime.lessThan(exampleDateTime1, exampleDateTime2);
+
+        assertTrue(validCase);
+    }
 
 }
