@@ -60,7 +60,7 @@ public class DateTimeTest
         Date exampleDate1 = new Date(4, 27, 2021);
         DateTime exampleDateTime1 = new DateTime(exampleDate1, exampleTime1);
 
-        Time12 exampleTime2 = newTime12(5, 50, pmInitiation);
+        Time12 exampleTime2 = new Time12(5, 50, pmInitiation);
         Date exampleDate2 = new Date(5, 28, 2021);
         DateTime exampleDateTime2 = new DateTime(exampleDate2, exampleTime2);
 
