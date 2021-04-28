@@ -62,9 +62,9 @@ public class DateTime
 	{
 		int diff=0;
 		//Todo: add your code here
-		// To ensure that they are 1 day within each other, we will perform the following: 		
-		boolean boundsTest1 = Date.equal(d1.nextDate(),d2);
-		boolean boundsTest2 = Date.equal(d2.nextDate(),d1);
+		// To ensure that they are 1 day within each other, we will perform the following: 	
+		boolean boundsTest1 = Date.equal(d1.getDate().nextDate(),d2.getDate());
+		boolean boundsTest2 = Date.equal(d2.getDate().nextDate(),d1.getDate());
 
 		// These bounds tests check and see if d2 lies on either side of d1. 
 		// and if they dont, then it throws the exception. 
