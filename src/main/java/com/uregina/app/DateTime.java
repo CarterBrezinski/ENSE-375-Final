@@ -75,8 +75,12 @@ public class DateTime
 		int date1day = d1.getDate().getDay();
 		int date2day = d2.getDate().getDay();
 
-		int date1time = d1.getDate().getDay().getTime;
-		int date2time = d2.getDate().getDay().getTime;
+		Time12 date1time = d1.getTime();
+		Time12 date2time = d2.getTime();
+		int date1Minutes = date1time.getMinutes();
+		int date1Hours = date1time.getHours();
+		int date2Minutes = date2time.getMinutes();
+		int date2Hours = date2time.getHours();
 
 		// There is the potential for the calculation to be thrown off due to say a previous or next day
 		// occuring on a previous day/month and having a larger/smaller value associated.
@@ -84,7 +88,7 @@ public class DateTime
 		// Currently this cant cover bridging across months. 
 		// This can be solved later during refactoring/2nd iteration development.
 		int dayDiff = date1day - date2day;
-		int timeDiff = date1time - date2time;
+		int timeDiff = (date1Hours - date2Hours) * 60 + (date1Minutes - date2Minutes);
 
 		diff = timeDiff + (dayDiff * 24 * 60);
 
