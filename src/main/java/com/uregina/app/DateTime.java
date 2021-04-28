@@ -75,8 +75,8 @@ public class DateTime
 		int date1day = d1.getDate().getDay();
 		int date2day = d2.getDate().getDay();
 
-		int date1time = d1.getTime();
-		int date2time = d2.getTime();
+		int date1time = d1.getDate().getDay().getTime;
+		int date2time = d2.getDate().getDay().getTime;
 
 		// There is the potential for the calculation to be thrown off due to say a previous or next day
 		// occuring on a previous day/month and having a larger/smaller value associated.
