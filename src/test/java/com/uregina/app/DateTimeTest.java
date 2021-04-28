@@ -32,7 +32,7 @@ public class DateTimeTest
     
     // This also accounts for a valid successful build test case.
     @Test
-    public void validToString() throws InvalidTimeException{
+    public void validToString() throws InvalidTimeException, InvalidDateException{
         boolean validCase = true;
 
         AmPm pmInitiation = AmPm.pm;
