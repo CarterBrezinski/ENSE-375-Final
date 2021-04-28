@@ -64,19 +64,19 @@ public class Time24Test
         assertTrue(validCase);
     }
 
-    @Test
-    public void validGetters() throws InvalidTimeException{
-        boolean validCase = false;
+    // @Test
+    // public void validGetters() throws InvalidTimeException{
+    //     boolean validCase = false;
 
-        Time12 example = new Time12(5, 37, pmInitiation);
+    //     Time12 example = new Time12(5, 37, pmInitiation);
 
-        AmPm getAMPM = example.getAM_or_PM();
-        int getHours = example.getHours();
-        int getMinutes = example.getMinutes();
+    //     AmPm getAMPM = example.getAM_or_PM();
+    //     int getHours = example.getHours();
+    //     int getMinutes = example.getMinutes();
 
-        if((getAMPM == pmInitiation)&&(getHours == 5)&&(getMinutes == 37)){
-            validCase = true;
-        }
-        assertTrue(validCase);
-    }
+    //     if((getAMPM == pmInitiation)&&(getHours == 5)&&(getMinutes == 37)){
+    //         validCase = true;
+    //     }
+    //     assertTrue(validCase);
+    // }
 }
